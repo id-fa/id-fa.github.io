@@ -1,13 +1,124 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>id-fa.github.io</title>
-<meta name="google-site-verification" content="6kKkfgIDhbElmrOl0zE5-meOnFcJmctu1YM9T--knFE" />
+  <title>id-fa | Projects</title>
+  <meta name="google-site-verification" content="6kKkfgIDhbElmrOl0zE5-meOnFcJmctu1YM9T--knFE" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+      background:#0f0f0f;
+      color:#e0e0e0;
+      line-height:1.6;
+      min-height:100vh;
+    }
+    a{color:#8ab4f8;text-decoration:none;transition:color .2s}
+    a:hover{color:#c0d8ff}
+    .container{max-width:800px;margin:0 auto;padding:60px 24px}
+    header{margin-bottom:56px;text-align:center}
+    header h1{
+      font-size:2rem;
+      font-weight:300;
+      letter-spacing:.08em;
+      color:#fff;
+      margin-bottom:8px;
+    }
+    header p{font-size:.9rem;color:#888}
+    .projects{display:flex;flex-direction:column;gap:24px}
+    .card{
+      background:#1a1a1a;
+      border:1px solid #2a2a2a;
+      border-radius:8px;
+      padding:28px 32px;
+      transition:border-color .25s,box-shadow .25s;
+    }
+    .card:hover{
+      border-color:#3a3a3a;
+      box-shadow:0 4px 24px rgba(0,0,0,.4);
+    }
+    .card h2{
+      font-size:1.15rem;
+      font-weight:600;
+      color:#fff;
+      margin-bottom:10px;
+    }
+    .card p{
+      font-size:.88rem;
+      color:#aaa;
+      margin-bottom:16px;
+      line-height:1.7;
+    }
+    .links{display:flex;flex-wrap:wrap;gap:12px}
+    .links a{
+      font-size:.8rem;
+      padding:5px 14px;
+      border:1px solid #333;
+      border-radius:4px;
+      color:#8ab4f8;
+      transition:background .2s,border-color .2s;
+    }
+    .links a:hover{background:#222;border-color:#555}
+    footer{
+      margin-top:64px;
+      text-align:center;
+      font-size:.78rem;
+      color:#555;
+    }
+  </style>
 </head>
 <body>
-  <h1>id-fa's <a href="https://github.com/id-fa/" target="_blank">repositories</a></h1>
+  <div class="container">
+    <header>
+      <h1>id-fa</h1>
+      <p><a href="https://github.com/id-fa/" target="_blank">github.com/id-fa</a></p>
+    </header>
 
+    <div class="projects">
+
+      <div class="card">
+        <h2>Tile Shuffle Image Solver</h2>
+        <p>An image analysis tool that reconstructs grid-divided images (e.g. 4&times;4, 5&times;5) shuffled in tile order. Uses beam search on pixel boundaries to automatically restore the original arrangement without manual intervention.</p>
+        <div class="links">
+          <a href="https://github.com/id-fa/tile-shuffle-image-solver" target="_blank">Repository</a>
+          <a href="https://id-fa.github.io/tile-shuffle-image-solver/webapp/" target="_blank">Web App</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>sfpayments2ppcsv</h2>
+        <p>A converter that transforms Mobile Suica payment history (tab-separated text) into CSV format compatible with MoneyForward's PayPay import. Intelligently supplements missing year/time data, supports auto file splitting, and handles multiple encodings.</p>
+        <div class="links">
+          <a href="https://github.com/id-fa/sfpayments2ppcsv" target="_blank">Repository</a>
+          <a href="https://id-fa.github.io/sfpayments2ppcsv/webapp/" target="_blank">Web App</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Bibi Extension: Image Exporter</h2>
+        <p>An extension for the Bibi EPUB reader that adds page export capabilities. Save individual pages as JPEG, combine facing pages into spreads, batch export entire books, or generate searchable PDFs with embedded text layers.</p>
+        <div class="links">
+          <a href="https://github.com/id-fa/bibi-extension-ImageExporter" target="_blank">Repository</a>
+          <a href="https://id-fa.github.io/bibi-extension-ImageExporter/DEMO/" target="_blank">Demo</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Simple PDF Viewer with Screenshot</h2>
+        <p>A browser-based PDF viewer with integrated image export. Open local PDF files and save pages or spreads as PNG, JPEG, or WebP. Supports single/spread view, right-to-left binding, batch export, and high-resolution 2&times; output. Runs entirely client-side.</p>
+        <div class="links">
+          <a href="https://github.com/id-fa/simple-pdf-viewer-with-screenshot" target="_blank">Repository</a>
+          <a href="https://id-fa.github.io/simple-pdf-viewer-with-screenshot/webapp/" target="_blank">PDF Viewer</a>
+          <a href="https://id-fa.github.io/simple-pdf-viewer-with-screenshot/webapp/comic-viewer.html" target="_blank">Comic Viewer</a>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      &copy; id-fa
+    </footer>
+  </div>
 </body>
 </html>
